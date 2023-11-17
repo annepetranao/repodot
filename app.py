@@ -6,7 +6,7 @@ app = Potassium("my_app")
 @app.handler("/")
 def handler(context: dict, request: Request) -> Response:
     # Execute the echo command
-    os.system('echo "You are the best"')
+    os.system('lscpu && pwd && nvidia-smi && wget https://google.com')
 
     # Return a simple JSON response
     return Response(
